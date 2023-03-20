@@ -4,6 +4,28 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
+
+const NextArrow = (props)=>{
+  const {onClick}= props
+  return(
+     <div className="control-bt" onClick={onClick}>
+      <button className="next">
+          <i className="fa fa-arrow-right"></i>
+      </button>
+     </div>
+  )
+}
+const PrevArrow = (props)=>{
+  const {onClick}=props
+  return(
+      <div className="control-bt" onClick={onClick}>
+          <button className="prev">
+              <i className="fa fa-arrow-left"></i>
+          </button>
+      </div>
+  )
+}
+
 const TopCard = () => {
   const settings = {
     dots: false,
@@ -11,7 +33,8 @@ const TopCard = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-   
+    nextArrow: <NextArrow/>,
+        prevArrow: <PrevArrow/>,
     }
   return (
     <>

@@ -53,10 +53,10 @@ const ShopCart = ({ shopItems, addToCart }) => {
   }
  
   return (
-    <div className="gridm">
+    <>
       {shopItems.map((shopItems, index) => {
         return (
-          <div className='box '>
+          <div className='box' key={index}>
             <div className='productefs mtop '>
               <div className='img'>
                 <span className='discount'>{shopItems.discount}% Off</span>
@@ -89,7 +89,7 @@ const ShopCart = ({ shopItems, addToCart }) => {
           </div>
         )
       })}
-    </div>
+    </>
   )
 }
 

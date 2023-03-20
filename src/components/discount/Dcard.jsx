@@ -5,13 +5,36 @@ import "slick-carousel/slick/slick-theme.css"
 import Ddata from "./Ddata"
 import "../newarrivals/style.css"
 
+const NextArrow = (props)=>{
+  const {onClick}= props
+  return(
+     <div className="control-bt" onClick={onClick}>
+      <button className="next">
+          <i className="fa fa-arrow-right"></i>
+      </button>
+     </div>
+  )
+}
+const PrevArrow = (props)=>{
+  const {onClick}=props
+  return(
+      <div className="control-bt" onClick={onClick}>
+          <button className="prev">
+              <i className="fa fa-arrow-left"></i>
+          </button>
+      </div>
+  )
+}
+
 const Dcard = () => {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 6,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
+    nextArrow: <NextArrow/>,
+    prevArrow: <PrevArrow/>,
     marign:202
   }
   return (
@@ -32,6 +55,7 @@ const Dcard = () => {
             </>
           )
         })}
+        
       </Slider>
     </>
   )

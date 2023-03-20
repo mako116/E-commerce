@@ -10,7 +10,7 @@ const Shop = ({ addToCart, shopItems }) => {
         <div className='container d_flex'>
           <Catg />
 
-          <div className='contentWidth'>
+          <div className='contentWidther'>
             <div className='heading d_flex'>
               <div className='heading-left row  f_flex'>
                 <h2>Mobile Phones</h2>

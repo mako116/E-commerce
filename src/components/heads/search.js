@@ -1,6 +1,5 @@
 import React from 'react'
-import logo from './img1.jpg'
-import {Link} from 'react-router-dom'
+ import {Link} from 'react-router-dom'
 const Search = ({cartItem}) => {
   window.addEventListener("scroll", ()=>{
     const search = document.querySelector(".search")
@@ -11,7 +10,7 @@ const Search = ({cartItem}) => {
        <section className='search'>
        <div className='container c_flex'>
         <div className='logo width'>
-        <img src={logo} alt=''/>
+         <h2>ShopCart</h2>
        </div>
        <div className='search-box f_flex'>
        <i className='fa fa-search'></i>
@@ -21,7 +20,9 @@ const Search = ({cartItem}) => {
 
        <div className='icon f_flex width'>
        <div className="homer">
+       <Link to="/pages">
        <i className='fa fa-user icon-circle'></i>
+       </Link>
        </div>
        <div className='cart'>
        <Link to="/cart">

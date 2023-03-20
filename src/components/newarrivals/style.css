@@ -26,3 +26,11 @@
   width: auto;
   height: auto;
 }
+.width{
+  width: 90%;
+}
+@media(max-width:512px){
+  .NewArrivals{
+    display: none;
+  }
+}

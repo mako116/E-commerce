@@ -44,9 +44,9 @@ const Footereds = () => {
           <div className='box'>
             <h2>Contact Us</h2>
             <ul>
-              <li>70 Washington Square South, New York, NY 10012, United States </li>
-              <li>Email: uilib.help@gmail.com</li>
-              <li>Phone: +1 1123 456 780</li>
+              <li>10 victoria island, Aba, Abia State, Nigeria</li>
+              {/* <li>Email:nwakwueemmanuel1@gmail.com</li> */}
+              <li>Phone: +2348100319613</li>
             </ul>
           </div>
         </div>

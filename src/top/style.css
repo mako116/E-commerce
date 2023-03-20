@@ -1,3 +1,7 @@
+body{
+  width: 100%;
+}
+
 .topCate {
     position: relative;
     background: #0f3460;
@@ -35,11 +39,37 @@ color: #fff;
     position: absolute;
     right: 0;
   }
+  @media(max-width:580px){
+    .topCate .nametop span {
+      font-size: 7px;
+      font-weight: bold;
+      padding: 0px 10px;
+       margin: 0px;
+       
+    }
+  }
+  @media(max-width:552px){
+    .container {
+      max-width: 93%;
+    }
+    .topCate .box {
+      margin:0 20px;
+    }
+    .topCate img {
+      width: 100%;
+      height: 100%;
+       border-radius: 5px;
+    }
+    .topCate {
+      display: none;
+    }
+  }
   @media(max-width:320px){
     .topCate {
       position: relative;
       background: #0f3460;
   color: #fff;
       height: 30vh;
-        }
+    }
+   
   }

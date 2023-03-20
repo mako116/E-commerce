@@ -1,12 +1,12 @@
 .flash {
     background: #0f3460;
-    padding: 50px 0;
+    /* padding: 50px 0; */
     color: #fff;
         text-shadow: 5PX 7PX 25px rgba(240, 227, 227, 0.534);
 
   }
   
-  @media(max-width:320px){
+  /* @media(max-width:320px){
     .flash {
         background: #0f3460;
         padding: 0px 0;
@@ -14,4 +14,4 @@
             text-shadow: 5PX 7PX 25px rgba(240, 227, 227, 0.534);  
       }
       
-  }
+  } */

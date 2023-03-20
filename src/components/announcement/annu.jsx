@@ -2,11 +2,11 @@ import React from 'react'
 import './annouc.css'
 const Annu = () => {
     const mystyle={
-        width:'30%',
+        width:'37%',
         height:'340px'
     }
     const mystyle1={
-        width:'68%',
+        width:'60%',
         height:'340px',
     }
   return (

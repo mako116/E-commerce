@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className='container d_flex'>
           <div className='catgrories d_flex gigit'>
           {/* <span className='fa fa-gift'></span> */}
-          <h4> ALL List </h4>
+           
            </div> 
            <div className='navlink'>
             <ul className={MobileMenu ? " nav-links-MobileMenu" : "link f_flex capitalize"} onClick={()=> setMobileMenu(false)} >
