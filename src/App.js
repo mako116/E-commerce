@@ -3,11 +3,12 @@
 import {BrowserRouter as Router,Route, Switch} from 'react-router-dom'
 import Page from './pages/page';
  import Data from "./components/flashCard/Data"
- import Shop from './components/shops/Shop';
-import { useState } from 'react';
+ import { useState } from 'react';
 import Cart from './common/cart';
 import Sdata from './components/shops/Sdata';
 import Footer from './common/footer/footer';
+import Timeline from './components/timeline/timeline';
+import Services from './components/services/Services';
 
 
 const App=()=> {
@@ -50,7 +51,16 @@ const App=()=> {
           <Route exact path="/cart" >
           <Cart cartItem={cartItem}  addToCart={addToCart} decreaseQty={decreaseQty}/>
           </Route>
-
+          <Route exact path="/services">
+          <Services/>
+          </Route>
+          <Route  exact path="/timeline">
+            <Timeline/>
+          </Route>
+          
+          <Route  exact path="/none">
+            <Timeline/>
+          </Route>
         </Switch>
         <Footer/>
       </Router>

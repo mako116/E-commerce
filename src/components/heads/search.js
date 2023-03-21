@@ -20,7 +20,7 @@ const Search = ({cartItem}) => {
 
        <div className='icon f_flex width'>
        <div className="homer">
-       <Link to="/pages">
+       <Link to="/">
        <i className='fa fa-user icon-circle'></i>
        </Link>
        </div>
